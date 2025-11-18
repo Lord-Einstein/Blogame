@@ -43,52 +43,65 @@
     </header>
 
     <main>
-        <hgroup>
-            <h1>Contact Us</h1>
-            <p>A question, a suggestion, or want to collaborate? Send us a message!</p>
-        </hgroup>
+       <div class="form-container">
+            <h1 class="form-title">Contact</h1>
+            
+            <div class="form-corners-bottom">
+                <form class="contact-form" action="#" method="POST">
+                    
+                    <div class="form-group">
+                    <label for="name">Name</label>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name"
+                        placeholder="Votre nom complet"
+                        required
+                    >
+                    </div>
 
-        <form method="post">
-            <div class="flex_row_container">
-                <fieldset class="flex_row">
-                    <input type="radio" id="male" name="gender" value="male">
-                    <label for="male">Mr.</label>
-                </fieldset>
-                <fieldset class="flex_row">
-                    <input type="radio" id="female" name="gender" value="female">
-                    <label for="female">Mrs.</label>
-                </fieldset>
-                <fieldset class="flex_row">
-                    <input type="radio" id="other" name="gender" value="other">
-                    <label for="other">Other</label>
-                </fieldset>
+                    <div class="form-group">
+                    <label for="age">Age</label>
+                    <input 
+                        type="number" 
+                        id="age" 
+                        name="age" 
+                        placeholder="Votre âge"
+                        min="1"
+                        max="150"
+                        required
+                    >
+                    </div>
+
+                    <div class="form-group">
+                    <label for="email">Email</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="votre.email@exemple.com"
+                        required
+                    >
+                    </div>
+
+                    <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea 
+                        id="message" 
+                        name="message" 
+                        placeholder="Faites nous part de vos impresions sur nos articles..."
+                        required
+                    ></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                    <span class="scan-line"></span>
+                    Send.
+                    </button>
+
+                </form>
             </div>
-
-            <fieldset>
-                <label for="name">Last Name:</label>
-                <input type="text" id="name" name="name" maxlength="30" placeholder="De Riv">
-            </fieldset>
-
-            <fieldset>
-                <label for="first_name">First Name:</label>
-                <input type="text" id="first_name" name="first_name" maxlength="30" placeholder="Gerald">
-            </fieldset>
-
-            <fieldset>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="gerald.deriv@gmail.com" required>
-            </fieldset>
-
-            <fieldset>
-                <label for="comment">Message:</label>
-                <textarea id="comment" name="comment" rows="10"
-                placeholder="Feel free to react to our articles and tell us about your favorite games!"></textarea>
-            </fieldset>
-
-            <fieldset class="button_submit">
-                <input type="submit" value="Send">
-            </fieldset>
-        </form>
+        </div>
     </main>
 
     <footer>

@@ -16,22 +16,6 @@
     position: relative;
 }
 
-/* .form-title {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 1.8rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    
-    background: linear-gradient(135deg, var(--color-cyan), var(--color-pink), var(--color-purple));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    
-    text-shadow: 0 0 30px rgba(100, 200, 255, 0.3);
-} */
-
 
 .contact-form {
     position: relative;
@@ -117,6 +101,7 @@
 
 label {
     display: block;
+    text-align: left;
     margin-bottom: 8px;
     font-size: 0.85rem;
     font-weight: 600;
