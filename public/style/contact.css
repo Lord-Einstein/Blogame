@@ -9,23 +9,6 @@
     --color-blue: rgba(28, 58, 255, 0.8);
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-/* 
-body {
-    font-family: 'Orbitron', sans-serif;
-    background: linear-gradient(135deg, var(--color-bg-start), var(--color-bg-mid), var(--color-bg-end));
-    color: #fff;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    padding: 20px;
-} */
-
 
 .form-container {
     width: 100%;
